@@ -105,7 +105,7 @@ Client.on("message", async message => {
         .setTitle("Change Log")
         .setColor("RED")
         .addField("Version:", "ALPHA 1.1")
-        .addField("What's new? ", "1.Add changelog command!")
+        .addField("What's new? ", "1.Add changelog command")
         message.channel.send(embed)
     }
 })
