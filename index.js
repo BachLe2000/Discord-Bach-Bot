@@ -32,11 +32,11 @@ Client.on("message", async message => {
     let args = messageArray.slice(1)
 
     if(cmd === `${prefix}hi`) {
-        return message.channel.send("Hello There!")
+        return message.channel.send("Check `=changelog` for more info")
     }
 
     if(cmd === `${prefix}hello`) {
-        return message.reply("hello, how are you?")
+        return message.reply("Check `=changelog` for more info")
     }
 
 })
@@ -53,10 +53,10 @@ Client.on("message", async message => {
         let user = message.mentions.users.first() || message.author
 
         let embed = new Discord.MessageEmbed()
-        .setTitle("Change Log")
+        .setTitle("Hello!")
         .setColor("RED")
-        .addField("Version:", "ALPHA 1.3")
-        .addField("What's new? ", "Delete level feature.")
+        .addField("What happened?", "Because I'm working in The Coder Community Server, so we will make this bot private!")
+        .addField("So?", "All the cmd (except developer command) will be disable!")
         message.channel.send(embed)
     }
 })
